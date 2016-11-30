@@ -18,61 +18,87 @@
         </div>
         <button class="main-nav__toggle" type="button">Открыть Меню</button>
       </nav>
-      <div class="page-header__logo">
-        <img src="sedona-logo.png" alt="City of Sedona">
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="sedona-logo.png" alt="City of Sedona">
+        </a>
       </div>
     </header>
     <main class="page-content">
       <div class="page-content__sedona-photo">
-        <img src="sedona.png" alt="Sedona">
+        <img class="page-content__img" src="sedona.png" alt="Sedona">
       </div>
-      <div class="page-content__intro page-content__intro_top">
+      <div class="intro intro_top">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
         <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <div class="page-content__form">
-        <form action="echo.sedona.com" method="post">
-          <fieldset class="form__introduction">
+      <div class="form">
+        <form class="form-content" action="echo.sedona.com" method="post">
+          <fieldset class="introduction">
             <legend class="introduction__title">Представьтесь</legend>
-            <label for="name">Имя*:</label>
-            <input type="text" name="name" id="name" required>
-            <label for="surname">Фамилия*:</label>
-            <input type="text" name="surname" id="surname" required>
-            <label for="middle-name">Отчество:</label>
-            <input type="text" name="middle-name" id="middle-name">
+              <div class="user-name">
+                <label class="user-name__label" for="name">Имя*:</label>
+                <input class="user-name__input" type="text" name="name" id="name" required>
+              </div>
+              <div class="user-surname">
+                <label class="user-surname__label" for="surname">Фамилия*:</label>
+                <input class="user-surname__input" type="text" name="surname" id="surname" required>
+              </div>
+              <div class="user-middle-name">
+                <label class="user-middle-name__label"for="middle-name">Отчество:</label>
+                <input class="user-middle-name__input" type="text" name="middle-name" id="middle-name">
+              </div>
           </fieldset>
-          <fieldset class="form__contact-info">
+          <fieldset class="contact-info">
             <legend class="contact-info__title">Контактная информация</legend>
-            <label for="phone">Контактный телефон*:</label>
-            <input type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-            <a class="phone-icon"></a>
-            <label for="email">Электронная почта*:</label>
-            <input type="text" name="email" id="email" placeholder="Введите e-mail" required>
-            <a class="email-icon"></a>
+              <div class="user-phone">
+                <label class="user-phone__label" for="phone">Контактный телефон*:</label>
+                <input class="user-phone__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+                <span class="user-phone__phone-icon"></span>
+              </div>
+              <div class="user-email">
+                <label class="user-email__label" for="email">Электронная почта*:</label>
+                <input class="user-email__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+                <span class="user-email__email-icon"></span>
+              </div>
           </fieldset>
-          <fieldset class="form__impression">
+          <fieldset class="impression">
             <legend class="impression__title">Ваше общее впечатление</legend>
-            <label for="positive">Скорее положительное</label>
-            <input type="radio" name="positive" id="positive" checked>
-            <label for="negative">Скорее отрицательное</label>
-            <input type="radio" name="negative" id="negative">
-            <label for="neutral">Затрудняюсь ответить</label>
-            <input type="radio" name="neutral" id="neutral">
+              <div class="user-impression-positive">
+                <label class="user-impression-positive__label" for="positive">Скорее положительное</label>
+                <input class="user-impression-positive__input" type="radio" name="radio-button" id="positive" checked>
+              </div>
+              <div class="user-impression-negative">
+                <label class="user-impression-negative__label" for="negative">Скорее отрицательное</label>
+                <input class="user-impression-negative__input" type="radio" name="radio-button" id="negative">
+              </div>
+              <div class="user-impression-neutral">
+                <label class="user-impression-neutral__label" for="neutral">Затрудняюсь ответить</label>
+                <input class="user-impression-neutral__input" type="radio" name="radio-button" id="neutral">
+              </div>
           </fieldset>
-          <fieldset class="form__visited-places">
+          <fieldset class="visited-places">
             <legend class="visited-places__title">Посещенные достопримечательности</legend>
-            <label for="devil-bridge">Мост Дьявола</label>
-            <input type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-            <label for="slide-park">Слайд-парк</label>
-            <input type="checkbox" name="slide-park" id="slide-park" checked>
-            <label for="bell-rock">Гора-Колокол</label>
-            <input type="checkbox" name="bell-rock" id="bell-rock">
-            <label for="red-rock">Красные скалы</label>
-            <input type="checkbox" name="red-rock" id="red-rock" checked>
+              <div class="devil-bridge">
+                <label class="devil-bridge__label" for="devil-bridge">Мост Дьявола</label>
+                <input class="devil-bridge__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              </div>
+              <div class="slide-park">
+                <label class="slide-park__label" for="slide-park">Слайд-парк</label>
+                <input class="slide-park__input" type="checkbox" name="slide-park" id="slide-park" checked>
+              </div>
+              <div class="bell-rock">
+                <label class="bell-rock__label" for="bell-rock">Гора-Колокол</label>
+                <input class="bell-rock__input" type="checkbox" name="bell-rock" id="bell-rock">
+              </div>
+              <div class="red-rock">
+                <label class="red-rock__label" for="red-rock">Красные скалы</label>
+                <input class="red-rock__input" type="checkbox" name="red-rock" id="red-rock" checked>
+              </div>
           </fieldset>
-          <fieldset class="form__comment">
+          <fieldset class="comment">
             <legend class="comment__title">Опишите свои эмоции</legend>
-            <textarea name="comment" id="comment" rows="5">Опишите подробно все свои восторги</textarea>
+            <textarea class="comment__textarea" name="comment" id="comment" rows="5">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="form__button" type="button">Отправить отзыв</button>
         </form>
@@ -81,7 +107,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="page-footer__hashtag">
-          <span>#VisitSedona</span>
+          <span class="sedona-hashtag">#VisitSedona</span>
         </section>
         <section class="page-footer__social-links">
           <a class="social-link social-link_twitter" href="twitter.com">Twitter</a>
@@ -89,7 +115,7 @@
           <a class="social-link social-link_youtube" href="youtube.com">Youtube</a>
         </section>
         <section class="page-footer__copyright">
-          <span>Разработано</span>
+          <span class="developers">Разработано</span>
           <a class="copyright-link copyright-link_academy" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
