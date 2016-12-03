@@ -37,7 +37,7 @@
         <h2 class="photo__title">Неродные просторы</h2>
         <p class="photo__author">Автор фото: Борис</p>
         <div class="likes">
-          <img class="likes__icon" src="like-icon.png" alt="Like">
+          <span class="likes__icon"></span>
           <p class="likes__number">1350</p>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <h2 class="photo__title">Местная растительность</h2>
         <p class="photo__author">Автор фото: Сергей</p>
         <div class="likes">
-          <img class="likes__icon" src="like-icon.png" alt="Like">
+          <span class="likes__icon"></span>
           <p class="likes__number">143</p>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <h2 class="photo__title">Дорога на север</h2>
         <p class="photo__author">Автор фото: Петр</p>
         <div class="likes">
-          <img class="likes__icon" src="like-icon.png" alt="Like">
+          <span class="likes__icon"></span>
           <p class="likes__number">96</p>
         </div>
       </div>
@@ -64,7 +64,7 @@
         <h2 class="photo__title">Мост дьявола</h2>
         <p class="photo__author">Автор фото: Антон</p>
         <div class="likes">
-          <img class="likes__icon" src="like-icon.png" alt="Like">
+          <span class="likes__icon"></span>
           <p class="likes__number">254</p>
         </div>
       </div>
@@ -73,11 +73,17 @@
         <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video">
-        <video class="video__frame" controls width="320" height="200">Видео</video>
+        <img class="video__frame" src="sedona-video.jpg" width="320" height="200">
         <div class="video__controls">
-          <img class="video__replay" src="replay-icon.png">
-          <img class="video__cc-icon" src="cc-icon.png">
-          <img class="video__screen-icon" src="screen-icon.png">
+          <div class="video__controls_top">
+            <div class="bar"></div>
+            <div class="toggle"></div>
+          </div>
+          <div class="video__controls_bottom">
+            <img class="video__replay" src="replay-icon.png">
+            <img class="video__cc-icon" src="cc-icon.png">
+            <img class="video__screen-icon" src="screen-icon.png">
+          </div>
         </div>
       </div>
     <main>
@@ -92,7 +98,7 @@
           <a class="social-link social-link_youtube" href="youtube.com">Youtube</a>
         </section>
         <section class="page-footer__copyright">
-          <span class="developers">Разработано</span>
+          <span class="page-footer__copyright-text">Разработано</span>
           <a class="copyright-link copyright-link_academy" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
