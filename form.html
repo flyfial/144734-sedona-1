@@ -2,62 +2,61 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона: Главная</title>
+    <title>Седона: Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav main-nav_closed">
-        <button class="main-nav__close-button" type="button">Закрыть Меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фото и Видео</a></li>
-            <li class="main-nav__item main-nav__item_active"><a>Форма Отзыва</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </div>
-        <button class="main-nav__toggle" type="button">Открыть Меню</button>
+    <header class="header">
+      <button class="header__btn" type="button"></button>
+      <nav class="header__nav header__nav_closed nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="photo.html" class="nav__link">Фото и Видео</a></li>
+          <li class="nav__item nav__item_active"><a class="nav__link">Форма Отзыва</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru/" class="nav__link">HTML Academy</a></li>
+        </ul>
       </nav>
+      <button class="header__hamburger" type="button"></button>
       <div class="logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__img" src="sedona-logo.png" alt="City of Sedona">
+        <a class="logo__link">
+          <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
         </a>
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__sedona-photo">
-        <img class="page-content__img" src="sedona.png" alt="Sedona">
+      <div class="page-content__sedona-photo page-content__sedona-photo_white-mask">
+        <img class="page-content__img" src="img/text-sedona.svg" alt="Sedona" width="229">
       </div>
-      <div class="intro intro_top">
+      <div class="intro intro_top intro_form-page">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
         <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <div class="form">
         <form class="form-content" action="echo.sedona.com" method="post">
-          <fieldset class="info-block">
+          <fieldset class="info-block info-block_top">
             <legend class="info-block__title">Представьтесь</legend>
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label" for="name">Имя*:</label>
-                <input class="info-block__field" type="text" name="name" id="name" required>
+                <input class="info-block__field" type="text" name="name" id="name" placeholder="Петр" required>
               </div>
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label" for="surname">Фамилия*:</label>
-                <input class="info-block__field" type="text" name="surname" id="surname" required>
+                <input class="info-block__field" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </div>
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label"for="middle-name">Отчество:</label>
-                <input class="info-block__field" type="text" name="middle-name" id="middle-name">
+                <input class="info-block__field" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
               </div>
           </fieldset>
           <fieldset class="info-block">
             <legend class="info-block__title">Контактная информация</legend>
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label" for="phone">Контактный телефон*:</label>
-                <input class="info-block__field" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+                <input class="info-block__field" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </div>
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label" for="email">Электронная почта*:</label>
-                <input class="info-block__field" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+                <input class="info-block__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </div>
           </fieldset>
           <fieldset class="info-block info-block_radio">
@@ -94,7 +93,7 @@
                 <input class="info-block__checkbox" type="checkbox" name="red-rock" id="red-rock" checked>
               </div>
           </fieldset>
-          <fieldset class="info-block">
+          <fieldset class="info-block info-block_bottom">
             <legend class="info-block__title">Опишите свои эмоции</legend>
             <textarea class="info-block__textarea" id="comment">Опишите подробно все свои восторги</textarea>
           </fieldset>
@@ -102,19 +101,19 @@
         </form>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <section class="page-footer__hashtag">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__hashtag">
           <span class="sedona-hashtag">#VisitSedona</span>
         </section>
-        <section class="page-footer__social-links">
-          <a class="social-link social-link_twitter" href="twitter.com">Twitter</a>
-          <a class="social-link social-link_facebook" href="facebook.com">Facebook</a>
-          <a class="social-link social-link_youtube" href="youtube.com">Youtube</a>
+        <section class="footer__social-links">
+          <a class="social-link social-link_twitter" href="twitter.com"></a>
+          <a class="social-link social-link_facebook" href="facebook.com"></a>
+          <a class="social-link social-link_youtube" href="youtube.com"></a>
         </section>
-        <section class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="copyright-link copyright-link_academy" href="https://htmlacademy.ru">HTML Academy</a>
+        <section class="footer__copyright">
+          <span class="footer__copyright-text">Разработано</span>
+          <a class="copyright-link copyright-link_academy" href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
