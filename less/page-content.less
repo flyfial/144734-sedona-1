@@ -9,26 +9,22 @@
 }
 
 .page-content__photo-intro {
+    position: relative;
     &_top {
         height: 389px;
         background: @bg-color url("../img/bg-back-mobile@1x.jpg") -224px 0;
     }
-    &_photo,
-    &_form {
+    &_extra {
         height: 158px;
         background: @bg-color url("../img/bg-back-mobile@1x.jpg") -224px -231px;
     }
     &_top::after,
-    &_photo::after,
-    &_form::after {
+    &_extra::after {
         content: url("../img/bg-intro-triangle-mobile.svg");
         position: absolute;
-        top: 391px;
+        bottom: -6px;
         left: 50%;
         margin-left: -160px;
-    }
-    &_top::after {
-        top: 622px;
     }
 }
 
