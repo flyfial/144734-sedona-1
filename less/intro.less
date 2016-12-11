@@ -1,23 +1,13 @@
 .intro {
+    position: relative;
     height: 221px;
     padding: 0 20px;
     color: black;
     background: white;
-    &__title {
-        margin: 0;
-        padding-top: 38px;
-        padding-bottom: 20px;
-        font-size: 18px;
-        line-height: 26px;
-    }
-    &__description {
-        line-height: 26px;
-    }
     &_top-page::after {
         content: url("../img/bg-triangle.svg");
         position: absolute;
-        top: 866px;
-        left: 50%;
+        bottom: -42px;
         margin-left: -160px;
     }
     &_photo-page {
@@ -30,4 +20,16 @@
     &_bottom {
         padding: 0 20px;
     }
+}
+
+.intro__title {
+    margin: 0;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.intro__description {
+    line-height: 26px;
 }

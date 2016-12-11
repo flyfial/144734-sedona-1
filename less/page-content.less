@@ -6,41 +6,46 @@
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    &__photo-intro {
-        width: @width;
+}
+
+.page-content__photo-intro {
+    &_top {
         height: 389px;
         background: @bg-color url("../img/bg-back-mobile@1x.jpg") -224px 0;
     }
-    &__photo-intro_white-mask::after {
-        content: url("../img/bg-intro-triangle-mobile.svg");
-        position: absolute;
-        top: 622px;
-        left: 50%;
-        margin-left: -160px;
+    &_photo,
+    &_form {
+        height: 158px;
+        background: @bg-color url("../img/bg-back-mobile@1x.jpg") -224px -231px;
     }
-    &__sedona-photo_white-mask::after {
+    &_top::after,
+    &_photo::after,
+    &_form::after {
         content: url("../img/bg-intro-triangle-mobile.svg");
         position: absolute;
         top: 391px;
         left: 50%;
         margin-left: -160px;
     }
-    &__sedona-photo {
-        height: 158px;
-        background: @bg-color url("../img/bg-back-mobile@1x.jpg") -224px -231px;
+    &_top::after {
+        top: 622px;
     }
-    &__img {
-        margin-top: 52px;
-    }
-    &__features {
-        background: white;
-    }
-    &__photo {
-        line-height: 0;
-    }
-    &__map {
-        line-height: 0;
-    }
+}
+
+.page-content__img {
+    margin-top: 52px;
+}
+
+.page-content__features {
+    background: white;
+}
+
+.page-content__photo {
+    line-height: 0;
+}
+
+.page-content__map {
+    line-height: 0;
 }
 
 .photo-intro {
