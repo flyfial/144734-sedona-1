@@ -1,0 +1,35 @@
+.intro {
+    position: relative;
+    height: 221px;
+    padding: 0 20px;
+    color: black;
+    background: white;
+    &_top-page::after {
+        content: url("../img/bg-triangle.svg");
+        position: absolute;
+        bottom: -42px;
+        margin-left: -160px;
+    }
+    &_photo-page {
+        border-bottom: @border;
+    }
+    &_form-page {
+        border-bottom: @border;
+        padding-bottom: 20px;
+    }
+    &_bottom {
+        padding: 0 20px;
+    }
+}
+
+.intro__title {
+    margin: 0;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.intro__description {
+    line-height: 26px;
+}
