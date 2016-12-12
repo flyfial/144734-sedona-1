@@ -20,11 +20,15 @@
     }
     &_top::after,
     &_extra::after {
-        content: url("../img/bg-intro-triangle-mobile.svg");
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
+        width: 320px;
+        height: 29px;
         position: absolute;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -160px;
+        left: 0;
+        bottom: -2px;
     }
 }
 
