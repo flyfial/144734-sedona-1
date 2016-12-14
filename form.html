@@ -25,7 +25,7 @@
     </header>
     <main class="page-content">
       <div class="page-content__photo-intro page-content__photo-intro_extra">
-        <img class="page-content__img" src="img/text-sedona.svg" alt="Sedona" width="229">
+        <img class="page-content__img" src="img/text-sedona.svg" alt="Sedona">
       </div>
       <div class="intro intro_top intro_form-page">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
@@ -34,22 +34,23 @@
       <div class="form">
         <form class="form-content" action="echo.sedona.com" method="post">
           <fieldset class="info-block info-block_top">
-            <legend class="info-block__title">Представьтесь</legend>
-              <div class="form__wrap form__wrap_field">
-                <label class="info-block__label" for="name">Имя*:</label>
-                <input class="info-block__field" type="text" name="name" id="name" placeholder="Петр" required>
-              </div>
-              <div class="form__wrap form__wrap_field">
-                <label class="info-block__label" for="surname">Фамилия*:</label>
-                <input class="info-block__field" type="text" name="surname" id="surname" placeholder="Иванов" required>
-              </div>
-              <div class="form__wrap form__wrap_field">
-                <label class="info-block__label"for="middle-name">Отчество:</label>
-                <input class="info-block__field" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
-              </div>
+            <legend class="info-block__title">Представьтесь:</legend>
+            <div class="form__wrap form__wrap_field">
+              <label class="info-block__label" for="name">Имя*:</label>
+              <input class="info-block__field" type="text" name="name" id="name" placeholder="Петр" required>
+            </div>
+            <div class="form__wrap form__wrap_field">
+              <label class="info-block__label" for="surname">Фамилия*:</label>
+              <input class="info-block__field" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </div>
+            <div class="form__wrap form__wrap_field">
+              <label class="info-block__label"for="middle-name">Отчество:</label>
+              <input class="info-block__field" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
+            </div>
           </fieldset>
-          <fieldset class="info-block">
-            <legend class="info-block__title">Контактная информация</legend>
+          <fieldset class="info-block info-block_contact-info">
+            <legend class="info-block__title">Контактная информация:</legend>
+            <div class="info-block__contact">
               <div class="form__wrap form__wrap_field">
                 <label class="info-block__label" for="phone">Контактный телефон*:</label>
                 <input class="info-block__field" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
@@ -58,46 +59,50 @@
                 <label class="info-block__label" for="email">Электронная почта*:</label>
                 <input class="info-block__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </div>
+            </div>
           </fieldset>
           <fieldset class="info-block info-block_radio">
-            <legend class="info-block__title">Ваше общее впечатление</legend>
-              <div class="form__wrap form__wrap_radio">
-                <label class="info-block__label" for="positive">Скорее положительное</label>
-                <input class="info-block__radio" type="radio" name="impression" id="positive" checked>
-              </div>
-              <div class="form__wrap form__wrap_radio">
-                <label class="info-block__label" for="negative">Скорее отрицательное</label>
-                <input class="info-block__radio" type="radio" name="impression" id="negative">
-              </div>
-              <div class="form__wrap form__wrap_radio">
-                <label class="info-block__label" for="neutral">Затрудняюсь ответить</label>
-                <input class="info-block__radio" type="radio" name="impression" id="neutral">
-              </div>
+            <legend class="info-block__title">Ваше общее впечатление:</legend>
+            <div class="form__wrap form__wrap_radio">
+              <input class="info-block__radio" type="radio" name="impression" id="positive" checked>
+              <label class="info-block__label" for="positive">Скорее положительное</label>
+            </div>
+            <div class="form__wrap form__wrap_radio">
+              <input class="info-block__radio" type="radio" name="impression" id="negative">
+              <label class="info-block__label" for="negative">Скорее отрицательное</label>
+            </div>
+            <div class="form__wrap form__wrap_radio">
+              <input class="info-block__radio" type="radio" name="impression" id="neutral">
+              <label class="info-block__label" for="neutral">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="info-block info-block_checkbox">
-            <legend class="info-block__title">Посещенные достопримечательности</legend>
+            <legend class="info-block__title">Посещенные достопримечательности:</legend>
+            <div class="info-block__columns">
               <div class="form__wrap form__wrap_checkbox">
-                <label class="info-block__label" for="devil-bridge">Мост Дьявола</label>
                 <input class="info-block__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <label class="info-block__label" for="devil-bridge">Мост Дьявола</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
-                <label class="info-block__label" for="slide-park">Слайд-парк</label>
                 <input class="info-block__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                <label class="info-block__label" for="slide-park">Слайд-парк</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
-                <label class="info-block__label" for="bell-rock">Гора-Колокол</label>
                 <input class="info-block__checkbox" type="checkbox" name="bell-rock" id="bell-rock">
+                <label class="info-block__label" for="bell-rock">Гора-Колокол</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
-                <label class="info-block__label" for="red-rock">Красные скалы</label>
                 <input class="info-block__checkbox" type="checkbox" name="red-rock" id="red-rock" checked>
+                <label class="info-block__label" for="red-rock">Красные скалы</label>
               </div>
+            </div>
           </fieldset>
           <fieldset class="info-block info-block_bottom">
-            <legend class="info-block__title">Опишите свои эмоции</legend>
+            <legend class="info-block__title">Опишите свои эмоции:</legend>
             <textarea class="info-block__textarea" id="comment">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="form__button" type="button">Отправить отзыв</button>
+          <span class="form__remark">* &ndash; Обязательные поля</span>
         </form>
       </div>
     </main>

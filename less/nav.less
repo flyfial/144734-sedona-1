@@ -26,3 +26,35 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+@media @tablet-width {
+    .nav {
+        width: 768px;
+        font-size: @font-size;
+        line-height: 26px;
+    }
+    .nav__items {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 56px;
+        background: white;
+    }
+    .nav__item {
+        width: 20%;
+        border: none;
+        background: transparent;
+        &:nth-child(2) {
+            margin-right: 20%;
+        }
+    }
+    .nav__link {
+        color: black;
+    }
+}
+
+@media @desktop-width {
+    .nav {
+        width: 1200px;
+    }
+}

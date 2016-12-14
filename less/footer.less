@@ -14,7 +14,6 @@
 .footer__social-links {
     display: inline-block;
     vertical-align: middle;
-    width: 160px;
     padding-top: 30px;
 }
 
@@ -33,4 +32,27 @@
     width: 27px;
     height: 34px;
     background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
+}
+
+@media @tablet-width {
+    .footer {
+        width: 768px;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 120px;
+    }
+    .footer__hashtag,
+    .footer__social-links,
+    .footer__copyright {
+        padding: 0;
+    }
+}
+
+@media @desktop-width {
+    .footer {
+        width: 1200px;
+    }
 }

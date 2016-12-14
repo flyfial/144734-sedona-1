@@ -2,6 +2,22 @@
     background: white;
 }
 
+.form__wrap {
+    &_radio {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: none;
+    }
+    &_checkbox {
+        width: 230px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: none;
+    }
+}
+
 .form__button {
     width: 280px;
     padding: 18px 0;
@@ -12,4 +28,24 @@
     color: white;
     background: @bg-color;
     border: 0;
+}
+
+.form__remark {
+    display: none;
+}
+
+@media @tablet-width {
+    .form__button {
+        width: 324px;
+    }
+    .form__remark {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media @desktop-width {
+    .form__button {
+        width: 480px;
+    }
 }

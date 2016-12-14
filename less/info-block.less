@@ -6,6 +6,18 @@
     &_top {
         text-align: left;
     }
+    &_contact-info {
+        .info-block__field {
+            width: 272px;
+            height: 56px;
+        }
+        .info-block__label {
+            display: block;
+            padding-left: 22px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+    }
     &_bottom {
         border: 0;
     }
@@ -35,4 +47,91 @@
     font-weight: bold;
     border: 0;
     background: #f2f2f2;
+}
+
+@media @tablet-width {
+    .info-block {
+        width: 275px;
+        height: 320px;
+        padding: 0;
+        border: 0;
+        &_top {
+            .info-block__title {
+                padding: 0 0 50px;
+                text-align: left;
+            }
+            .info-block__field {
+                width: 178px;
+            }
+        }
+        &_contact-info {
+            width: 648px;
+            .info-block__field {
+                width: 640px;
+            }
+        }
+        &_radio {
+            order: -1;
+            text-align: left;
+            .info-block__title {
+                padding: 0 0 50px;
+                text-align: left;
+            }
+        }
+        &_checkbox {
+            width: 468px;
+            padding: 0 90px;
+        }
+        &_bottom {
+            width: 648px;
+        }
+    }
+    .info-block__title {
+        padding-bottom: 30px;
+    }
+    .info-block__columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-block__textarea {
+        width: 608px;
+        height: 120px;
+    }
+}
+
+@media @desktop-width {
+    .info-block {
+        width: 400px;
+        &_top {
+            .info-block__field {
+                width: 312px;
+            }
+        }
+        &_contact-info {
+            width: 960px;
+            .info-block__field {
+                width: 258px;
+            }
+            .form__wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 480px;
+            }
+        }
+        &_checkbox {
+            width: 960px;
+            padding: 0;
+        }
+        &_bottom {
+            width: 960px;
+        }
+        .info-block__contact {
+            display: flex;
+        }
+        .info-block__textarea {
+            width: 920px;
+            height: 120px;
+        }
+    }
 }

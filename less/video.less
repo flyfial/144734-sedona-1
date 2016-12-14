@@ -1,8 +1,11 @@
 .video {
     position: relative;
     width: @width;
-    height: 306px;
-    background: white url("../img/video-mobile@1x.jpg") no-repeat 0 0;
+    background: white;
+}
+
+.video__img {
+    width: 100%;
 }
 
 .video__controls {
@@ -69,4 +72,61 @@
     height: 20px;
     background: url("../img/icon-video-fullscreen.svg") no-repeat;
     margin-top: 23px;
+}
+
+@media @tablet-width {
+    .video {
+        width: 648px;
+        padding: 35px 60px;
+    }
+    .video__controls {
+        &_top {
+            top: 350px;
+            left: 60px;
+            width: 648px;
+            height: 92px;
+        }
+        &_bottom {
+            top: 363px;
+            left: 60px;
+            width: 648px;
+            height: 92px;
+            background: transparent;
+        }
+        &_bar {
+            width: 400px;
+            transform: translate(94px, 45px);
+        }
+        &_toggle {
+            transform: translate(206px, 39px);
+        }
+    }
+    .video__replay {
+        margin-right: 455px;
+    }
+}
+
+@media @desktop-width {
+    .video {
+        width: 800px;
+        padding: 35px 200px;
+    }
+    .video__controls {
+        &_top {
+            top: 445px;
+            left: 200px;
+            width: 800px;
+        }
+        &_bottom {
+            top: 458px;
+            left: 200px;
+            width: 800px;
+        }
+        &_bar {
+            width: 540px;
+        }
+    }
+    .video__replay {
+        margin-right: 620px;
+    }
 }
