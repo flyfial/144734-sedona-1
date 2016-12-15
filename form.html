@@ -51,11 +51,11 @@
           <fieldset class="info-block info-block_contact-info">
             <legend class="info-block__title">Контактная информация:</legend>
             <div class="info-block__contact">
-              <div class="form__wrap form__wrap_field">
+              <div class="form__wrap form__wrap_field form__wrap_tel">
                 <label class="info-block__label" for="phone">Контактный телефон*:</label>
                 <input class="info-block__field" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </div>
-              <div class="form__wrap form__wrap_field">
+              <div class="form__wrap form__wrap_field form__wrap_mail">
                 <label class="info-block__label" for="email">Электронная почта*:</label>
                 <input class="info-block__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </div>
@@ -65,15 +65,15 @@
             <legend class="info-block__title">Ваше общее впечатление:</legend>
             <div class="form__wrap form__wrap_radio">
               <input class="info-block__radio" type="radio" name="impression" id="positive" checked>
-              <label class="info-block__label" for="positive">Скорее положительное</label>
+              <label class="info-block__label info-block__label_radio" for="positive">Скорее положительное</label>
             </div>
             <div class="form__wrap form__wrap_radio">
               <input class="info-block__radio" type="radio" name="impression" id="negative">
-              <label class="info-block__label" for="negative">Скорее отрицательное</label>
+              <label class="info-block__label info-block__label_radio" for="negative">Скорее отрицательное</label>
             </div>
             <div class="form__wrap form__wrap_radio">
               <input class="info-block__radio" type="radio" name="impression" id="neutral">
-              <label class="info-block__label" for="neutral">Затрудняюсь ответить</label>
+              <label class="info-block__label info-block__label_radio" for="neutral">Затрудняюсь ответить</label>
             </div>
           </fieldset>
           <fieldset class="info-block info-block_checkbox">
@@ -81,19 +81,19 @@
             <div class="info-block__columns">
               <div class="form__wrap form__wrap_checkbox">
                 <input class="info-block__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                <label class="info-block__label" for="devil-bridge">Мост Дьявола</label>
+                <label class="info-block__label info-block__label_checkbox" for="devil-bridge">Мост Дьявола</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
                 <input class="info-block__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
-                <label class="info-block__label" for="slide-park">Слайд-парк</label>
+                <label class="info-block__label info-block__label_checkbox" for="slide-park">Слайд-парк</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
                 <input class="info-block__checkbox" type="checkbox" name="bell-rock" id="bell-rock">
-                <label class="info-block__label" for="bell-rock">Гора-Колокол</label>
+                <label class="info-block__label info-block__label_checkbox" for="bell-rock">Гора-Колокол</label>
               </div>
               <div class="form__wrap form__wrap_checkbox">
                 <input class="info-block__checkbox" type="checkbox" name="red-rock" id="red-rock" checked>
-                <label class="info-block__label" for="red-rock">Красные скалы</label>
+                <label class="info-block__label info-block__label_checkbox" for="red-rock">Красные скалы</label>
               </div>
             </div>
           </fieldset>
@@ -122,5 +122,19 @@
         </section>
       </div>
     </footer>
+    <div class="popup popup_failure">
+      <h2 class="popup__title">Что-то пошло не так!</h2>
+      <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup__button" type="button">Ок</button>
+    </div>
+    <div class="popup popup_success">
+      <div class="popup__content popup__content_top">
+        <h2 class="popup__title">Ваш отзыв отправлен</h2>
+        <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup__content popup__content_bottom">
+        <button class="popup__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,55 @@
+.reason {
+    &_top {
+        padding: 60px 20px 30px;
+        color: white;
+        background: @bg-color;
+    }
+    &_bottom {
+        padding: 35px 20px;
+        color: white;
+        background: @bg-color;
+    }
+    &_gray {
+        padding: 25px 35px;
+        background: #eeeeee;
+    }
+}
+
+.reason__title {
+    margin: 0;
+    font-size: 18px;
+}
+
+@media @tablet-width {
+    .reason {
+        &_top,
+        &_bottom {
+            width: 176px;
+            padding: 45px 40px;
+        }
+        &_gray {
+            width: 156px;
+            padding: 25px 50px;
+            .reason__title {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media @desktop-width {
+    .reason {
+        &_top,
+        &_bottom {
+            width: 280px;
+            padding: 45px 60px;
+        }
+        &_gray {
+            width: 280px;
+            padding: 40px 65px;
+            .reason__title {
+                padding: 0 70px;
+            }
+        }
+    }
+}

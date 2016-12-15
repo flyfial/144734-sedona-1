@@ -1,0 +1,64 @@
+.form {
+    background: white;
+}
+
+.form__wrap {
+    &_radio {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: none;
+        text-align: left;
+        text-indent: 40px;
+    }
+    &_checkbox {
+        width: 230px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: none;
+        text-align: left;
+        text-indent: 40px;
+    }
+}
+
+.form__button {
+    width: 280px;
+    padding: 18px 0;
+    font-family: @font-family;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: @bg-color;
+    border: 0;
+}
+
+.form__remark {
+    display: none;
+}
+
+@media @tablet-width {
+    .form__button {
+        width: 324px;
+    }
+    .form__remark {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media @desktop-width {
+    .form__button {
+        width: 480px;
+    }
+    .form__wrap {
+        &_tel,
+        &_mail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 480px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.logo {
+    position: relative;
+    width: @width;
+    height: 56px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 -5px 5px #6c96b0;
+    z-index: 2;
+}
+
+@media @tablet-width {
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -61px;
+        width: 102px;
+        height: 83px;
+        background: transparent;
+        box-shadow: none;
+    }
+}
